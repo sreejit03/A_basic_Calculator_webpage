@@ -1,0 +1,91 @@
+$panel-width: 600px;
+$cal-width: 350px;
+$color-primary: #041936;
+$color-secondary: #00C4FF;
+$btn-width: 64px;
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.panel {
+  padding: 20px 40px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #EDF2EF;
+}
+
+.panel-calculator {
+  width: $cal-width;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $color-primary;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+  table td {
+    width: 25%;
+  }
+
+  form {
+    position: relative;
+
+    .note {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: $color-secondary;
+      width: 100px;
+    }
+  }
+}
+
+.calView {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: $color-primary;
+  padding: 40px;
+  color: white;
+  font-size: 30px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+}
+
+.button {
+  text-align: center;
+  color: white;
+  border: none;
+  background-color: #00C4FF;
+  width: 100%;
+  height: $btn-width;
+  font-size: 25px;
+  margin: 10px 0;
+  border-radius: 20px;
+  font-weight: 100;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #6C00FF;
+  }
+}
+
+.equal {
+  background: linear-gradient(90deg, #00C4FF 10%, #6C00FF 90%);
+}
