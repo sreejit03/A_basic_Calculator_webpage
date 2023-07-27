@@ -71,7 +71,7 @@ body {
   text-align: center;
   color: white;
   border: none;
-  background-color: #00C4FF;
+  background-color: #162125;
   width: 100%;
   height: $btn-width;
   font-size: 25px;
@@ -82,10 +82,10 @@ body {
   transition: background-color 0.3s ease-in-out;
 
   &:hover {
-    background-color: #6C00FF;
+    background-color: #260653;
   }
 }
 
 .equal {
-  background: linear-gradient(90deg, #00C4FF 10%, #6C00FF 90%);
+  background: linear-gradient(90deg, #090ccd 10%, #110325 90%);
 }
